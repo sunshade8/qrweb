@@ -1,0 +1,31 @@
+.Section1{
+    padding: 10px;
+    background-color:#FFFFFF;
+}
+.Section2{
+    padding: 10px;
+    background-color: #FAFAFF;
+    min-width: 100vw;
+}
+.Section3{
+    padding: 10px;
+    background-color: #FAFAFF;
+    min-width: 100vw;
+}
+.Section4{
+    padding: 10px;
+    background-color: #FFFFFF;
+    min-width: 100vw;
+
+}
+.Section5{
+    padding: 10px;
+    background-color: #FAFAFF;
+    min-width: 100vw;
+
+}
+.InfoSection{
+    padding: 10px;
+    background-color: #3E3E4B;
+    min-width: 100vw;
+}

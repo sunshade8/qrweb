@@ -1,0 +1,25 @@
+.Main_header{
+    align-items: start;
+}
+.gradient_background {
+    background: linear-gradient(#FFFFFF, #fafaff);
+    height: 100vh;
+    width: 100vw;
+}
+  
+.resizable-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+.waiter-image {
+    width: 80px;
+    height: 80px;
+}
+.tablet-image {
+    width: 150px;
+    height: auto;
+}
+.pay-image{
+    width: 200px;
+    height: auto;
+}
