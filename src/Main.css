@@ -1,5 +1,6 @@
 .Main_header{
     align-items: start;
+    
 }
 .gradient_background {
     background: linear-gradient(#FFFFFF, #fafaff);
@@ -8,7 +9,7 @@
 }
   
 .resizable-image {
-    width: 300px; /* Adjust the width as needed */
+    max-width: 100%;
     height: auto; /* Maintain the aspect ratio */
 }
 .waiter-image {
@@ -23,3 +24,22 @@
     width: 200px;
     height: auto;
 }
+
+.container {
+    width: 100%;
+    padding: 16px;
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 992px) {
+    .resizable-image {
+      max-width: 400px; /* or adjust to your preferred maximum size for desktop */
+    }
+  }
