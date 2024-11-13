@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Button from '@mui/material/Button';
+import ApplyButton from './applyButton';
 
 function Section1(){
     return(
@@ -10,12 +11,7 @@ function Section1(){
             <p style={{textAlign:'center',fontWeight:'bold', fontSize:'20px',paddingTop:"10px"}}>사장님 혼자</p>
             <p style={{textAlign:'center',fontWeight:'bold', fontSize:'20px',paddingTop:"10px"}}>운영하는 가게</p>
             <div style={{paddingTop:'20px'}}></div>
-            <Button
-                variant="contained"
-                style={{width: '140px',fontSize:'16px',fontWeight:'bold'}}
-                sx={{backgroundColor:'#4942E4',borderRadius:'30px'}}>
-                    지금 신청하기
-                </Button>           
+            <ApplyButton></ApplyButton>           
         </div>
     );
 }

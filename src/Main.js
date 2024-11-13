@@ -8,6 +8,7 @@ import Section3 from './Section3';
 import Section4 from './Section4';
 import Section5 from './Section5';
 import InfoSection from './InfoSection';
+import ApplyButton from './applyButton';
 
 function Main() {
   return (
@@ -22,23 +23,23 @@ function Main() {
       <div className="Main_header"
           style={{
               display: 'flex',
+              position: 'fixed',
               flexDirection: 'row',
               justifyContent: 'space-between',
               alignItems: 'center',
               width: '90%',
-              padding: '20px',
-              paddingLeft: '20px'
+              padding: '15px',
+              paddingLeft: '20px',
+              backgroundColor: '#FFF !important',
+              zIndex: 1000,  // Make sure it stays on top of other content
+              
+              borderBottom: '0.5px solid #ccc'  // Add a bottom border
           }}
       >
           <p style={{ fontWeight: 'bold', fontSize: '20px' }}>QRMENU</p>
-          <Button
-              variant="contained"
-              style={{ width: '120px', fontSize: '14px', fontWeight: 'bold' }}
-              sx={{ backgroundColor: '#4942E4', borderRadius: '30px' }}
-          >
-              지금 신청하기
-          </Button>
+          <ApplyButton></ApplyButton>
       </div>  
+      <div style={{padding: "30px"}}></div>
       <Section1 />
       <img src={phoneImage} alt="Example" className="resizable-image" />
       <Section2 />
