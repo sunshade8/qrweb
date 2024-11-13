@@ -39,4 +39,21 @@
       transform: rotate(360deg);
     }
   }
+  .responsive-image {
+    width: 100%;  
+    height: auto;  
+    display: block;
+    margin: auto;  
+    max-height: 100vh;  
+  }
+  .responsive-text-b {
+    font-size: 6vw;  /* Adjust the number based on desired size */
+    color: #403434;
+  }
+  .responsive-text-m {
+    font-size: 4vw;  /* Adjust the number based on desired size */
+  }
+  .responsive-text-s {
+    font-size: 2vw;  /* Adjust the number based on desired size */
+  }
   

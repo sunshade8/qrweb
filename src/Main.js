@@ -39,7 +39,7 @@ function Main() {
           <p style={{ fontWeight: 'bold', fontSize: '20px' }}>QRMENU</p>
           <ApplyButton></ApplyButton>
       </div>  
-      <div style={{padding: "30px"}}></div>
+      <div style={{padding: "10px"}}></div>
       <Section1 />
       <img src={phoneImage} alt="Example" className="resizable-image" />
       <Section2 />
