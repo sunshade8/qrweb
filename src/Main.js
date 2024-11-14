@@ -28,9 +28,9 @@ function Main() {
               justifyContent: 'space-between',
               alignItems: 'center',
               width: '90%',
-              padding: '15px',
+              padding: '10px',
               paddingLeft: '20px',
-              backgroundColor: '#FFF !important',
+              
               zIndex: 1000,  // Make sure it stays on top of other content
               
               borderBottom: '0.5px solid #ccc'  // Add a bottom border
@@ -39,7 +39,7 @@ function Main() {
           <p style={{ fontWeight: 'bold', fontSize: '20px' }}>QRMENU</p>
           <ApplyButton></ApplyButton>
       </div>  
-      <div style={{padding: "10px"}}></div>
+      <div style={{padding: "30px"}}></div>
       <Section1 />
       <img src={phoneImage} alt="Example" className="resizable-image" />
       <Section2 />
