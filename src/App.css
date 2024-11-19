@@ -44,16 +44,16 @@
     height: auto;  
     display: block;
     margin: auto;  
-    max-height: 100vh;  
+    max-height: 200vh;  
   }
   .responsive-text-b {
-    font-size: 5.5vw;  /* Adjust the number based on desired size */
+    font-size: clamp(1rem, 5.5vw, 2rem);  /* Adjust values as needed */
     color: #312A2A;
-  }
+}
   .responsive-text-m {
-    font-size: 4vw;  /* Adjust the number based on desired size */
+    font-size: clamp(1rem, 5.5vw, 1.2rem);   /* Adjust the number based on desired size */
   }
   .responsive-text-s {
-    font-size: 2vw;  /* Adjust the number based on desired size */
+    font-size: clamp(1rem, 4vw, 0.9rem);   /* Adjust the number based on desired size */
   }
   
