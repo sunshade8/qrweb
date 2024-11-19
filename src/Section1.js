@@ -1,8 +1,5 @@
 import React from 'react';
 import './App.css';
-import Button from '@mui/material/Button';
-import ApplyButton from './applyButton';
-import webQr from './images/webqr.png'
 import ArrowIndicator from './ArrowIndicator';
 
 function Section1(){

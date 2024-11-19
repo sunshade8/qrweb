@@ -46,8 +46,10 @@ function Section2(){
             </div>
             
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"20px",}}>온라인 결제 시스템</p>
+            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"30px",color:"#4E5968"}}>토스페이/네이버페이/카카오페이</p>
+            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",color:"#4E5968"}}>등으로 자리에서 결제 가능해져요</p>
 
-            <div style={{ display: 'flex', justifyContent: 'center',paddingTop:'30px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center',paddingTop:'40px' }}>
                 <img
                     src={payImage} // replace with the actual image URL or import path
                     alt="pay"
@@ -60,8 +62,7 @@ function Section2(){
                      }}
              />
             </div>
-            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"30px",color:"#4E5968"}}>토스페이/네이버페이/카카오페이</p>
-            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",color:"#4E5968"}}>등으로 자리에서 결제 가능해져요</p>
+            
             <div style={{paddingTop:'40px'}}></div>
             
            
