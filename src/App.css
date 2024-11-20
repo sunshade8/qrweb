@@ -1,6 +1,9 @@
 .App {
     text-align: center;
-  }
+    background-color: #FFFFFF; /* Ensure this is also set if App has its styles */
+    min-height: 100vh; /* Makes sure the app stretches to at least the height of the viewport */
+}
+  
   
   .App-logo {
     height: 40vmin;
@@ -13,7 +16,7 @@
     }
   }
   .App-header {
-    background-color: #282c34;
+    background-color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

@@ -17,7 +17,7 @@ const Mobile = ({ children }) => {
 };
 
 const App = () => (
-  <div>
+  <div className='App'style={{ backgroundColor: '#FFFFFF', minHeight: '100vh' }}>
     <Main />
   </div>
 );

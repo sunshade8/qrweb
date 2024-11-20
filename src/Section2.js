@@ -1,21 +1,38 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.css'
 import './Section.css';
 import payImage from './images/payImage.png'
 import tableImage from './images/tableqr.png'
 import ipadImage from './images/ipadmock.png'
+import { motion } from 'framer-motion';
+import useOnScreen from './useOnScreen.js';
 
 
 function Section2(){
+    const imageRef = useRef();
+    const isImageVisible = useOnScreen(imageRef, "100px");
+    const fadeInUp = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1,
+          transition: { duration: 1.3, ease: "easeOut" }
+        }
+      };
     return(
         <div className='Section2'>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",}}>지금 신청시 1년간</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"0px",}}>지금 신청시 1년간</p>
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>주문 & 분석 무료!</p>
             <div style={{paddingTop:'50px'}}></div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <img
+        <motion.img
+            ref={imageRef}
             src={tableImage} // replace with the actual image URL or import path
             alt="QR Order"
+            variants={fadeInUp}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: isImageVisible ? 1 : 0.8, opacity: isImageVisible ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
             style={{
                 width: '90%',
                 maxWidth: '500px', // optional: limits the size on larger screens
@@ -32,9 +49,14 @@ function Section2(){
             <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",color:"#4E5968"}}>매출 상승 전략들을 추천해줘요</p>
             <div style={{paddingTop:'40px'}}></div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img
+                <motion.img
+                    ref={imageRef}
                     src={ipadImage} // replace with the actual image URL or import path
                     alt="QR Order"
+                    variants={fadeInUp}
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: isImageVisible ? 1 : 0.8, opacity: isImageVisible ? 1 : 0 }}
+                    transition={{ duration: 0.5 }}
                     style={{
                         width: '90%',
                         maxWidth: '500px', // optional: limits the size on larger screens
@@ -46,7 +68,7 @@ function Section2(){
             </div>
             
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"20px",}}>온라인 결제 시스템</p>
-            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"30px",color:"#4E5968"}}>토스페이/네이버페이/카카오페이</p>
+            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"30px",color:"#4E5968"}}>카카오페이 네이버페이 토스페이</p>
             <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",color:"#4E5968"}}>등으로 자리에서 결제 가능해져요</p>
 
             <div style={{ display: 'flex', justifyContent: 'center',paddingTop:'40px' }}>
@@ -63,7 +85,7 @@ function Section2(){
              />
             </div>
             
-            <div style={{paddingTop:'40px'}}></div>
+            <div style={{paddingTop:'100px'}}></div>
             
            
         </div>
