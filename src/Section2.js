@@ -23,37 +23,32 @@ function Section2(){
     return(
         <div className='Section2'>
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',marginTop:"-50px",}}>가게의 미감이 중요해</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",paddingBottom:"20px"}}>도입이 망설여지셨다면?</p>
-            <motion.img
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",paddingBottom:"20px"}}>도입이 망설여지셨다면?</p>
+            <img
                 ref={imageRef}
                 src={phoneImage2}
                 alt="Example"
-                    className="resizable-image"
-                    variants={fadeInUp}
-                    initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: isImageVisible ? 1 : 0.8, opacity: isImageVisible ? 1 : 0 }}
-                        transition={{ duration: 1 }}
-        />
+                className="resizable-image"
+            />
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',marginTop:"-50px",}}>추가 금액 지불로</p>
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>커스텀 디자인의 웹사이트 제작</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"14px",fontWeight:'bold',paddingTop:"20px",}}>✨✨ 웹사이트는 무제한으로 수정 가능해요</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"14px",fontWeight:'bold',color:"#5C5B5B",paddingTop:"10px",}}>⚠️ 금액은 추가 협의, 요구사항 별 상이</p>
             <div style={{paddingTop:'70px'}}></div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <motion.img
-            ref={imageRef}
-            src={tableImage} // replace with the actual image URL or import path
-            alt="QR Order"
-            variants={fadeInUp}
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: isImageVisible ? 1 : 0.8, opacity: isImageVisible ? 1 : 0 }}
-            transition={{ duration: 0.2 }}
-            style={{
-                width: '90%',
-                maxWidth: '500px', // optional: limits the size on larger screens
-                borderRadius: '15px', // adjust as needed
-                justifyContent: 'center',
-                objectFit: 'cover',
+            <img
+                ref={imageRef}
+                src={tableImage} // Ensure this is the correct path or URL to your image
+                alt="QR Order"
+                    style={{
+                        width: '90%',
+                        maxWidth: '500px', // limits the size on larger screens
+                        borderRadius: '15px', // rounded corners for the image
+                        justifyContent: 'center', // center the image (mostly for flex containers)
+                        objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
                      }}
-        />
+            />
+
             </div>
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"70px",}}>지금 신청시 1년간</p>
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>주문 & 분석 무료!</p>
@@ -64,22 +59,19 @@ function Section2(){
             <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",color:"#4E5968"}}>매출 상승 전략들을 추천해줘요</p>
             <div style={{paddingTop:'40px'}}></div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <motion.img
-                    ref={imageRef}
-                    src={ipadImage} // replace with the actual image URL or import path
-                    alt="QR Order"
-                    variants={fadeInUp}
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: isImageVisible ? 1 : 0.8, opacity: isImageVisible ? 1 : 0 }}
-                    transition={{ duration: 0.2 }}
-                    style={{
-                        width: '90%',
-                        maxWidth: '500px', // optional: limits the size on larger screens
-                        borderRadius: '15px', // adjust as needed
-                        justifyContent: 'center',
-                        objectFit: 'cover',
-                     }}
-             />
+            <img
+                ref={imageRef}
+                src={ipadImage} // Ensure this is the correct path or URL to your image
+                alt="QR Order"
+                style={{
+                    width: '90%',
+                    maxWidth: '500px', // limits the size on larger screens
+                    borderRadius: '15px', // rounded corners for the image
+                    justifyContent: 'center', // center the image (mostly for flex containers)
+                    objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
+                }}
+            />
+
             </div>
             
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"50px",}}>온라인 결제 시스템</p>
