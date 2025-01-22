@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import useOnScreen from './useOnScreen.js'; // Ensure this is correctly imported
-import ArrowIndicator from './ArrowIndicator';
+
 import './App.css';
 
 function Section1() {
@@ -20,6 +20,7 @@ function Section1() {
 
   return (
     <div className='Section1'>
+
       <div className="pt-4"></div>
       <motion.p
         ref={ref}
@@ -49,8 +50,9 @@ function Section1() {
       >
         매장의 모든 주문 관리
       </motion.p>
+      
 
-      <ArrowIndicator />
+    
       <div style={{ paddingTop: '20px' }}></div>
     </div>
   );

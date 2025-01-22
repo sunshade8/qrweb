@@ -43,7 +43,7 @@ function Main() {
           padding: '10px',
           paddingLeft: '20px',
           zIndex: 1000,
-          borderBottom: '0.5px solid #ccc'
+          
         }}
       >
         <img
@@ -55,7 +55,8 @@ function Main() {
             marginRight: '5px',
           }}
         />
-        <ApplyButton />
+        {/* <ApplyButton /> */}
+        
       </div>
       <div style={{ padding: "30px" }}></div>
       <Section1 />
@@ -71,6 +72,7 @@ function Main() {
       />
       <Section2 />
       <InfoSection />
+  
     </div>
   );
 }

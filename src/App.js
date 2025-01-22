@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Main from './Main';
 import { useMediaQuery } from 'react-responsive';
+import ArrowIndicator from './ArrowIndicator';
+
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -18,7 +20,9 @@ const Mobile = ({ children }) => {
 
 const App = () => (
   <div className='App'style={{ backgroundColor: '#FFFFFF', minHeight: '100vh' }}>
+    <ArrowIndicator/>
     <Main />
+
   </div>
 );
 
