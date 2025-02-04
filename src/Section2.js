@@ -4,6 +4,7 @@ import './Section.css';
 import payImage from './images/payImage.png'
 import tableImage from './images/tableqr.png'
 import ipadImage from './images/ipadmock.png'
+import ipadCurrent from './images/ipadcurrent.png'
 import { motion } from 'framer-motion';
 import useOnScreen from './useOnScreen.js';
 import phoneImage2 from './images/submock.png';
@@ -50,9 +51,28 @@ function Section2(){
             />
 
             </div>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"70px",}}>지금 신청시 1년간</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>주문 & 분석 무료!</p>
-            <p className='responsive-text-s' style={{textAlign:'center',fontWeight:'bold',paddingTop:"50px",color:"#4E5968",}}>곧 추가될 기능</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"70px",}}>지금 신청시</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",}}>3개월간 주문 & 분석</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>✨무료!✨</p>
+            <div style={{ display: 'flex', justifyContent: 'center' ,paddingTop: '70px'}}>
+            <img
+                ref={imageRef}
+                src={ipadCurrent} // Ensure this is the correct path or URL to your image
+                alt="QR Order"
+                    style={{
+                        width: '90%',
+                        maxWidth: '500px', // limits the size on larger screens
+                        borderRadius: '15px', // rounded corners for the image
+                        justifyContent: 'center', // center the image (mostly for flex containers)
+                        objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
+                     }}
+            />
+
+            </div>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"70px",}}>기계를 잘 못다루는 분들도</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",}}>바로 적응할 수 있는</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>매장 관리 화면</p>
+            <p className='responsive-text-s' style={{textAlign:'center',fontWeight:'bold',paddingTop:"50px",color:"#4E5968",}}>❗️곧 추가될 기능❗️</p>
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"50px",}}>AI 데이터 분석 서비스</p>
             
             <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"30px",color:"#4E5968"}}>AI가 동종 업계 가게와의 비교 분석 후</p>
