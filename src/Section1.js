@@ -43,12 +43,12 @@ function Section1() {
       </motion.p>
       <motion.p
         className='responsive-text-b'
-        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "15px" }}
+        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "15px",color:"#CC3F3F" }}
         variants={fadeInUp}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
       >
-        매장의 모든 주문 관리
+        '오더리'와 함께 모든 주문 관리
       </motion.p>
       
 

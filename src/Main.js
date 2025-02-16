@@ -7,6 +7,7 @@ import Section2 from './Section2';
 import InfoSection from './InfoSection';
 import ApplyButton from './applyButton';
 import orderlyLogo from './images/orderlylogoblack.png'
+import orderlyNew from './images/orderlynewword.png'
 import { motion } from 'framer-motion';
 
 function Main() {
@@ -47,15 +48,15 @@ function Main() {
         }}
       >
         <img
-          src={orderlyLogo}
+          src={orderlyNew}
           alt="Brand Logo"
           style={{
-            height: '25px',
-            marginTop: '10px',
+            height: '20px',
+            marginTop: '0px',
             marginRight: '5px',
           }}
         />
-        {/* <ApplyButton /> */}
+        <ApplyButton />
         
       </div>
       <div style={{ padding: "30px" }}></div>

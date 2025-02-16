@@ -32,8 +32,9 @@ function Section2(){
                 className="resizable-image"
             />
             <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',marginTop:"-50px",}}>추가 금액 지불로</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>커스텀 디자인의 웹사이트 제작</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"14px",fontWeight:'bold',paddingTop:"20px",}}>✨✨ 웹사이트는 무제한으로 수정 가능해요</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>업종별 커스텀 디자인의 화면 제작</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"18px",fontWeight:'bold',paddingTop:"20px",}}>⭐️가게 대표 웹사이트로도 사용 가능해요</p>
+            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"14px",fontWeight:'bold',paddingTop:"10px",}}>✨✨ 웹사이트는 무제한으로 수정 가능해요</p>
             <p className='responsive-text-b' style={{textAlign:'center',fontSize:"14px",fontWeight:'bold',color:"#5C5B5B",paddingTop:"10px",}}>⚠️ 금액은 추가 협의, 요구사항 별 상이</p>
             <div style={{ display: 'flex', justifyContent: 'center' ,paddingTop: '70px'}}>
             <img
