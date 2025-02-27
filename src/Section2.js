@@ -54,7 +54,6 @@ function Section2(){
                 alt="QR Order"
                 style={{
                     width: isDesktop ? '45%' : '90%',
-
                     borderRadius: '15px', // rounded corners for the image
                     justifyContent: 'center', // center the image (mostly for flex containers)
                     objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
@@ -63,7 +62,7 @@ function Section2(){
             <div style={{paddingTop: isDesktop ? '150px' : '70px'}}></div>
             <p style={{textAlign:'left',fontWeight:'bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop:"15px",fontSize: isDesktop ? '40px' : '28px'}}>최고의 가성비</p>
             <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop: isDesktop ? '20px' : '10px',color:"#6C6C6C",fontSize: isDesktop ? '26px' : '16px'}}>저렴한 비용으로 AI 분석 & 웹사이트 제작 </p>
-            <div style={{ paddingTop: isDesktop ? '40px' : '20px' }}></div>
+            <div style={{ paddingTop: isDesktop ? '70px' : '30px' }}></div>
 
             <div
               style={{
@@ -106,7 +105,7 @@ function Section2(){
             <div style={{paddingTop: isDesktop ? '150px' : '70px'}}></div>
             <p style={{textAlign:'left',fontWeight:'bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop:"15px",fontSize: isDesktop ? '40px' : '28px'}}>심플한 매장관리 화면</p>
             <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop: isDesktop ? '20px' : '10px',color:"#6C6C6C",fontSize: isDesktop ? '26px' : '16px',}}>기계를 잘 못다루는 분들도 바로 적응해요</p>
-            <div style={{ paddingTop: isDesktop ? '40px' : '10px' }}></div>
+            <div style={{paddingTop: isDesktop ? '60px' : '20px'}}></div>
               <div
                 style={{
                   display: 'flex',
@@ -139,45 +138,45 @@ function Section2(){
             <div style={{paddingTop: isDesktop ? '150px' : '70px'}}></div>
         
             <p style={{ textAlign: 'left', fontWeight: 'bold', paddingLeft: isDesktop ? '220px' : '20px', fontSize: isDesktop ? '40px' : '28px' }}>
-  깔끔한 인테리어
-</p>
-<p style={{ textAlign: 'left', fontWeight: 'semi-bold', paddingLeft: isDesktop ? '220px' : '20px', paddingTop: isDesktop ? '20px' : '10px', color: "#6C6C6C", fontSize: isDesktop ? '26px' : '16px' }}>
-  파리, 도쿄, 상하이 매장들도 사용하는 심플한 디자인
-</p>
-<div style={{ paddingTop: isDesktop ? '70px' : '30px' }}></div>
+              깔끔한 인테리어
+            </p>
+            <p style={{ textAlign: 'left', fontWeight: 'semi-bold', paddingLeft: isDesktop ? '220px' : '20px', paddingTop: isDesktop ? '20px' : '10px', color: "#6C6C6C", fontSize: isDesktop ? '26px' : '16px' }}>
+              파리, 도쿄, 상하이 매장들도 사용하는 심플한 디자인
+            </p>
+            <div style={{ paddingTop: isDesktop ? '70px' : '30px' }}></div>
 
-{/* Flexbox container for images */}
-<div
-  style={{
-    display: 'flex',
-    flexDirection: isDesktop ? 'row' : 'column', // Row for desktop, column for mobile
-    justifyContent: 'center',
-    alignItems: 'center', // Center items vertically when in column mode
-    gap: isDesktop ? '40px' : '20px', // Adjust gap for desktop and mobile
-  }}
->
-  <img
-    ref={imageRef}
-    src={tableImage} // First image
-    alt="QR Order"
-    style={{
-      width: isDesktop ? '40%' : '90%', // Adjust width for desktop and mobile
-      maxWidth: '500px',
-      borderRadius: '15px',
-      objectFit: 'cover',
-    }}
-  />
-  <img
-    src={qrimage} // Second image (same as the first)
-    
-    style={{
-      width: isDesktop ? '20%' : '0%', // Adjust width for desktop and mobile
-      maxWidth: '500px',
-      borderRadius: '15px',
-      objectFit: 'cover',
-    }}
-  />
-</div>
+          {/* Flexbox container for images */}
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: isDesktop ? 'row' : 'column', // Row for desktop, column for mobile
+              justifyContent: 'center',
+              alignItems: 'center', // Center items vertically when in column mode
+              gap: isDesktop ? '40px' : '20px', // Adjust gap for desktop and mobile
+            }}
+          >
+            <img
+              ref={imageRef}
+              src={tableImage} // First image
+              alt="QR Order"
+              style={{
+                width: isDesktop ? '40%' : '90%', // Adjust width for desktop and mobile
+                maxWidth: '500px',
+                borderRadius: '15px',
+                objectFit: 'cover',
+              }}
+            />
+            <img
+              src={qrimage} // Second image (same as the first)
+              
+              style={{
+                width: isDesktop ? '20%' : '0%', // Adjust width for desktop and mobile
+                maxWidth: '500px',
+                borderRadius: '15px',
+                objectFit: 'cover',
+              }}
+            />
+          </div>
             <div style={{paddingTop: isDesktop ? '150px' : '100px'}}></div>
             <div style={{ textAlign: 'left',paddingLeft: isDesktop ? '220px' : '20px' }}>
                 <img
