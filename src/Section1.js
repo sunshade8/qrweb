@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import useOnScreen from './useOnScreen.js'; // Ensure this is correctly imported
+import { useMediaQuery } from 'react-responsive'; 
 
 import './App.css';
 
 function Section1() {
+  const isDesktop = useMediaQuery({ minWidth: 992 });
   const ref = useRef(); // Reference for the entire section or individual elements
   const isVisible = useOnScreen(ref);
 
@@ -25,7 +27,7 @@ function Section1() {
       <motion.p
         ref={ref}
 
-        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "60px",fontSize: '25px',color:"#706F6F" }}
+        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "60px",fontSize: isDesktop ? '36px' : '26px',color:"#706F6F" }}
         variants={fadeInUp}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
@@ -34,7 +36,7 @@ function Section1() {
       </motion.p>
       <motion.p
     
-        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "15px",fontSize: '36px' }}
+        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "15px",fontSize: isDesktop ? '50px' : '36px' }}
         variants={fadeInUp}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
