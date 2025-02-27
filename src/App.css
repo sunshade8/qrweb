@@ -50,7 +50,7 @@
     max-height: 200vh;  
   }
   .responsive-text-b {
-    font-size: clamp(1rem, 5.5vw, 2rem);  /* Adjust values as needed */
+    font-size: clamp(1rem, 7vw, 2rem);  /* Adjust values as needed */
     color: #312A2A;
 }
   .responsive-text-m {

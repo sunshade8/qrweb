@@ -1,6 +1,7 @@
 .Section1{
     padding: 10px;
     background-color:#FFFFFF;
+    min-width: 100vw;
 }
 .Section2{
     padding: 10px;

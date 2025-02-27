@@ -1,5 +1,5 @@
 .Main_header {
-    width: 100%;  /* Ensures the header is full width */
+     /* Ensures the header is full width */
     margin: 0;    /* Removes any margin that might be causing gaps */
     padding: 0;   /* Adjust padding as necessary */
     display: flex;
@@ -9,7 +9,7 @@
     right: 0;     /* Ensures the header extends to the right edge */
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 50;
     background-color: #FFFFFF; /* or any color that matches your design */
     border-bottom: '0.5px solid #ccc'; /* Adjust or remove as needed */
 }
@@ -26,12 +26,6 @@ html, body {
     overflow-x: hidden;
 }
 
-.gradient_background {
-    background: linear-gradient(#FFFFFF, #fafaff);
-    height: 100vh;
-    width: 100vw;
-}
-  
 .resizable-image {
     max-width: 100%;
     height: auto; /* Maintain the aspect ratio */
@@ -67,3 +61,4 @@ html, body {
       max-width: 400px; /* or adjust to your preferred maximum size for desktop */
     }
   }
+

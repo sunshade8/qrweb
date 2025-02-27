@@ -11,15 +11,13 @@ function ApplyButton(){
         <Button
             variant="contained"
             onClick={handleClick}
-            style={{ width: '120px', fontSize: '14px', fontWeight: 'bold' }}
+            style={{ width: '110px', fontSize: '16px', fontWeight: 'bold' }}
             sx={{
-            backgroundColor: '#CC3F3F', // Initial background color
+            backgroundColor: '#FF5F15', // Initial background color
             borderRadius: '10px',
-            '&:hover': {
-                backgroundColor: '#b03535' // Slightly darker shade for the hover state
-            }
+            
                 }}>
-        지금 신청하기
+        상담하기
         </Button>
          );
       

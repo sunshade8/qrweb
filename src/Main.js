@@ -1,14 +1,12 @@
 import React, { useRef } from 'react';
 import './Main.css';
 import useOnScreen from './useOnScreen.js';
-import phoneImage from './images/mainmock.png';
 import Section1 from './Section1';
 import Section2 from './Section2';
 import InfoSection from './InfoSection';
 import ApplyButton from './applyButton';
-import orderlyLogo from './images/orderlylogoblack.png'
-import orderlyNew from './images/orderlynewword.png'
-import { motion } from 'framer-motion';
+import orderlyNew from './images/orderlynewword.png';
+import SlideView from './Slideview.js';  // Import the new slider component
 
 function Main() {
   const imageRef = useRef();
@@ -39,12 +37,9 @@ function Main() {
           position: 'fixed',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          alignItems: 'center',
-          width: '90%',
           padding: '10px',
-          paddingLeft: '20px',
-          zIndex: 1000,
-          
+          paddingLeft:'20px',
+    
         }}
       >
         <img
@@ -53,27 +48,20 @@ function Main() {
           style={{
             height: '20px',
             marginTop: '0px',
-            marginRight: '5px',
+            marginRight: '5px'
           }}
         />
         <ApplyButton />
         
       </div>
-      <div style={{ padding: "30px" }}></div>
+      <div style={{ padding: "20px" }}></div>
       <Section1 />
-      <motion.img
-        ref={imageRef}
-        src={phoneImage}
-        alt="Example"
-        className="resizable-image"
-        variants={fadeInUp}
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: isImageVisible ? 1 : 0.8, opacity: isImageVisible ? 1 : 0 }}
-        transition={{ duration: 1 }}
-      />
+
+      {/* Replace the static image with the Swiper slider */}
+      <SlideView />
+
       <Section2 />
       <InfoSection />
-  
     </div>
   );
 }

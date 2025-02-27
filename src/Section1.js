@@ -24,37 +24,26 @@ function Section1() {
       <div className="pt-4"></div>
       <motion.p
         ref={ref}
-        className='responsive-text-b'
-        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "80px" }}
-        variants={fadeInUp}
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-      >
-        사용하시는 포스기 그대로,
-      </motion.p>
-      <motion.p
-        className='responsive-text-b'
-        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "15px" }}
-        variants={fadeInUp}
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-      >
-        테이블에 부착된 QR코드로
-      </motion.p>
-      <motion.p
-        className='responsive-text-b'
-        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "15px",color:"#CC3F3F" }}
-        variants={fadeInUp}
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-      >
-        '오더리'와 함께 모든 주문 관리
-      </motion.p>
-      
 
+        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "60px",fontSize: '25px',color:"#706F6F" }}
+        variants={fadeInUp}
+        initial="hidden"
+        animate={isVisible ? "visible" : "hidden"}
+      >
+        테이블 오더,
+      </motion.p>
+      <motion.p
     
-      <div style={{ paddingTop: '20px' }}></div>
+        style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: "15px",fontSize: '36px' }}
+        variants={fadeInUp}
+        initial="hidden"
+        animate={isVisible ? "visible" : "hidden"}
+      >
+        감각적일 수 있습니다.
+      </motion.p>
+      <div style={{paddingTop:'20px'}}></div>
     </div>
+    
   );
 }
 

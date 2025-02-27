@@ -7,8 +7,9 @@ import ipadImage from './images/ipadmock.png'
 import ipadCurrent from './images/ipadcurrent.png'
 import { motion } from 'framer-motion';
 import useOnScreen from './useOnScreen.js';
-import phoneImage2 from './images/submock.png';
-
+import soon from './images/soon.png';
+import phoneImage2 from './images/submock.png'
+import webExample from './images/webex.png'
 
 function Section2(){
     const imageRef = useRef();
@@ -23,20 +24,57 @@ function Section2(){
       };
     return(
         <div className='Section2'>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',marginTop:"-50px",}}>가게의 미감이 중요해</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",paddingBottom:"20px"}}>도입이 망설여지셨다면?</p>
+            <div style={{marginTop:'-50px'}}></div>
+            
+            <div style={{marginTop:'70px'}}></div>
+            <div style={{ textAlign: 'left',paddingLeft:"20px", }}>
+                <img
+                    ref={imageRef}
+                    src={soon}
+                    alt="Example"
+                    width="25%"
+                    style={{}}
+                />
+            </div>
+            <p style={{textAlign:'left',fontWeight:'bold',paddingLeft:"20px",paddingTop:"15px",fontSize: '28px'}}>AI 매출 분석</p>
+            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft:"20px",paddingTop:"10px",color:"#6C6C6C",fontSize:"16px",}}>사장님의 직감과 AI의 데이터 분석의 융합</p>
+            <div style={{paddingTop:'30px'}}></div>
             <img
                 ref={imageRef}
-                src={phoneImage2}
-                alt="Example"
-                className="resizable-image"
+                src={ipadImage} // Ensure this is the correct path or URL to your image
+                alt="QR Order"
+                style={{
+                    width: '90%',
+                    maxWidth: '500px', // limits the size on larger screens
+                    borderRadius: '15px', // rounded corners for the image
+                    justifyContent: 'center', // center the image (mostly for flex containers)
+                    objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
+                }}
             />
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',marginTop:"-50px",}}>추가 금액 지불로</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>업종별 커스텀 디자인의 화면 제작</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"18px",fontWeight:'bold',paddingTop:"20px",}}>⭐️가게 대표 웹사이트로도 사용 가능해요</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"14px",fontWeight:'bold',paddingTop:"10px",}}>✨✨ 웹사이트는 무제한으로 수정 가능해요</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontSize:"14px",fontWeight:'bold',color:"#5C5B5B",paddingTop:"10px",}}>⚠️ 금액은 추가 협의, 요구사항 별 상이</p>
-            <div style={{ display: 'flex', justifyContent: 'center' ,paddingTop: '70px'}}>
+            <div style={{paddingTop:'70px'}}></div>
+            <p style={{textAlign:'left',fontWeight:'bold',paddingLeft:"20px",paddingTop:"15px",fontSize: '28px'}}>부담없는 비용</p>
+            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft:"20px",paddingTop:"10px",color:"#6C6C6C",fontSize:"16px",}}>저렴한 비용으로 AI 분석 & 가게만의 신규 웹사이트 추가</p>
+            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft:"20px",paddingTop:"10px",color:"#6C6C6C",fontSize:"10px",}}>아래는 웹사이트 화면으로, 주문이 안되는 보안이 추가된 웹사이트입니다.</p>
+            <div style={{paddingTop:'20px'}}></div>
+            <div style={{ display: 'flex', justifyContent: 'center' ,paddingTop: '30px'}}>
+            <img
+                ref={imageRef}
+                src={webExample} // Ensure this is the correct path or URL to your image
+                alt="QR Order"
+                    style={{
+                        width: '50%',
+                        maxWidth: '500px', // limits the size on larger screens
+                        borderRadius: '15px', // rounded corners for the image
+                        justifyContent: 'center', // center the image (mostly for flex containers)
+                        objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
+                     }}
+            />
+
+            </div>
+            <div style={{paddingTop:'70px'}}></div>
+            <p style={{textAlign:'left',fontWeight:'bold',paddingLeft:"20px",paddingTop:"15px",fontSize: '28px'}}>심플한 매장관리 화면</p>
+            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft:"20px",paddingTop:"10px",color:"#6C6C6C",fontSize:"16px",}}>기계를 잘 못다루는 분들도 바로 적응해요</p>
+            <div style={{ display: 'flex', justifyContent: 'center' ,paddingTop: '30px'}}>
             <img
                 ref={imageRef}
                 src={ipadCurrent} // Ensure this is the correct path or URL to your image
@@ -51,10 +89,11 @@ function Section2(){
             />
 
             </div>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"70px",}}>기계를 잘 못다루는 분들도</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",}}>바로 적응할 수 있는</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>매장 관리 화면</p>
             <div style={{paddingTop:'70px'}}></div>
+        
+            <p style={{textAlign:'left',fontWeight:'bold',paddingLeft:"20px",paddingTop:"15px",fontSize: '28px'}}>깔끔한 인테리어</p>
+            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft:"20px",paddingTop:"10px",color:"#6C6C6C",fontSize:"16px",}}>파리, 도쿄, 상하이 매장들도 사용하는 심플한 디자인</p>
+            <div style={{paddingTop:'30px'}}></div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img
                 ref={imageRef}
@@ -70,35 +109,18 @@ function Section2(){
             />
 
             </div>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"70px",}}>지금 신청시</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",}}>3개월간 주문 & 분석</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',color:"#CC3F3F",paddingTop:"10px",}}>✨무료!✨</p>
-            
-            <p className='responsive-text-s' style={{textAlign:'center',fontWeight:'bold',paddingTop:"50px",color:"#4E5968",}}>❗️곧 추가될 기능❗️</p>
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"50px",}}>AI 데이터 분석 서비스</p>
-            
-            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"30px",color:"#4E5968"}}>AI가 동종 업계 가게와의 비교 분석 후</p>
-            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",color:"#4E5968"}}>매출 상승 전략들을 추천해줘요</p>
-            <div style={{paddingTop:'40px'}}></div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img
-                ref={imageRef}
-                src={ipadImage} // Ensure this is the correct path or URL to your image
-                alt="QR Order"
-                style={{
-                    width: '90%',
-                    maxWidth: '500px', // limits the size on larger screens
-                    borderRadius: '15px', // rounded corners for the image
-                    justifyContent: 'center', // center the image (mostly for flex containers)
-                    objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
-                }}
-            />
-
+            <div style={{paddingTop:'100px'}}></div>
+            <div style={{ textAlign: 'left',paddingLeft:"20px", }}>
+                <img
+                    ref={imageRef}
+                    src={soon}
+                    alt="Example"
+                    width="25%"
+                    style={{}}
+                />
             </div>
-            
-            <p className='responsive-text-b' style={{textAlign:'center',fontWeight:'bold',paddingTop:"50px",}}>온라인 결제 시스템</p>
-            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"30px",color:"#4E5968"}}>카카오페이 네이버페이 토스페이</p>
-            <p className='responsive-text-m' style={{textAlign:'center',fontWeight:'bold',paddingTop:"10px",color:"#4E5968"}}>등으로 자리에서 결제 가능해져요</p>
+            <p style={{textAlign:'left',fontWeight:'bold',paddingLeft:"20px",paddingTop:"15px",fontSize: '28px'}}>온라인 결제 시스템</p>
+            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft:"20px",paddingTop:"10px",color:"#6C6C6C",fontSize:"16px",}}>다양한 결제 방식으로 자리에서 결제 가능해져요</p>
 
             <div style={{ display: 'flex', justifyContent: 'center',paddingTop:'70px' }}>
                 <img
