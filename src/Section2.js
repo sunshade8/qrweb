@@ -12,6 +12,9 @@ import useOnScreen from './useOnScreen.js';
 import soon from './images/soon.png';
 import phoneImage2 from './images/submock.png'
 import webExample from './images/webex.png'
+import box1 from './images/box1.png'
+import box2 from './images/box2.png'
+import box3 from './images/box3.png'
 import { useMediaQuery } from 'react-responsive'; 
 
 function Section2(){
@@ -58,58 +61,81 @@ function Section2(){
                 }}
             />
             <div style={{paddingTop: isDesktop ? '150px' : '70px'}}></div>
-            <p style={{textAlign:'left',fontWeight:'bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop:"15px",fontSize: isDesktop ? '40px' : '28px'}}>적은 비용으로 많은걸 한번에</p>
-            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop: isDesktop ? '20px' : '10px',color:"#6C6C6C",fontSize: isDesktop ? '26px' : '16px'}}>저렴한 비용으로 AI 분석 & 100만원을 아끼는 </p>
-            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop: isDesktop ? '20px' : '10px',color:"#6C6C6C",fontSize: isDesktop ? '26px' : '16px'}}>가게만의 신규 웹사이트 추가 </p>
-            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop: isDesktop ? '20px' : '10px',color:"#6C6C6C",fontSize:"10px",}}>아래는 웹사이트 화면으로, 주문이 안되는 보안이 추가된 웹사이트입니다.</p>
-            <div style={{paddingTop: isDesktop ? '40px' : '20px'}}></div>
-            <div style={{ display: 'flex', justifyContent: 'center' ,paddingTop: '30px'}}>
-            <img
-                ref={imageRef}
-                src={webExample} // Ensure this is the correct path or URL to your image
-                alt="QR Order"
-                    style={{
-                        width: isDesktop ? '20%' : '50%',
-                        borderRadius: '15px', // rounded corners for the image
-                        justifyContent: 'center', // center the image (mostly for flex containers)
-                        objectFit: 'cover', // ensures the aspect ratio is maintained while filling the area
-                     }}
-            />
+            <p style={{textAlign:'left',fontWeight:'bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop:"15px",fontSize: isDesktop ? '40px' : '28px'}}>최고의 가성비</p>
+            <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop: isDesktop ? '20px' : '10px',color:"#6C6C6C",fontSize: isDesktop ? '26px' : '16px'}}>저렴한 비용으로 AI 분석 & 웹사이트 제작 </p>
+            <div style={{ paddingTop: isDesktop ? '40px' : '20px' }}></div>
 
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row', // Always row because wrapping will handle mobile layout
+                flexWrap: isDesktop ? 'nowrap' : 'wrap', // No wrap on desktop, wrap on mobile
+                justifyContent: 'center', // Center-align items horizontally on each row
+                alignItems: 'center', // Center-align items vertically
+                gap: isDesktop ? '40px' : '20px', // Adjust gap for desktop and mobile
+              }}
+            >
+              <img
+                ref={imageRef}
+                src={box1}
+                alt="Box 1"
+                style={{
+                  width: isDesktop ? '20%' : '45%', // Adjust width for desktop and mobile
+                  objectFit: 'cover',
+                }}
+              />
+              <img
+                ref={imageRef}
+                src={box2}
+                alt="Box 2"
+                style={{
+                  width: isDesktop ? '20%' : '45%',
+                  objectFit: 'cover',
+                }}
+              />
+              <img
+                src={box3}
+                alt="Box 3"
+                style={{
+                  width: isDesktop ? '20%' : '45%',
+                  objectFit: 'cover',
+                }}
+              />
             </div>
+
             <div style={{paddingTop: isDesktop ? '150px' : '70px'}}></div>
             <p style={{textAlign:'left',fontWeight:'bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop:"15px",fontSize: isDesktop ? '40px' : '28px'}}>심플한 매장관리 화면</p>
             <p style={{textAlign:'left',fontWeight:'semi-bold',paddingLeft: isDesktop ? '220px' : '20px',paddingTop: isDesktop ? '20px' : '10px',color:"#6C6C6C",fontSize: isDesktop ? '26px' : '16px',}}>기계를 잘 못다루는 분들도 바로 적응해요</p>
             <div style={{ paddingTop: isDesktop ? '40px' : '10px' }}></div>
-            <div
-  style={{
-    display: 'flex',
-    flexDirection: isDesktop ? 'row' : 'column', // Row for desktop, column for mobile
-    justifyContent: 'center',
-    alignItems: 'center', // Center items vertically when in column mode
-    gap: isDesktop ? '40px' : '20px', // Adjust gap for desktop and mobile
-  }}
->
-  <img
-    ref={imageRef}
-    src={ipadCurrent} // First image
-    alt="QR Order"
-    style={{
-      width: isDesktop ? '35%' : '90%', // Adjust width for desktop and mobile
-      borderRadius: '15px',
-      objectFit: 'cover',
-    }}
-  />
-  <img
-    src={ipadCurrent1} // Second image (same as the first)
-    alt="QR Order"
-    style={{
-      width: isDesktop ? '35%' : '0%', // Adjust width for desktop and mobile
-      borderRadius: '15px',
-      objectFit: 'cover',
-    }}
-  />
-</div>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: isDesktop ? 'row' : 'column', // Row for desktop, column for mobile
+                  justifyContent: 'center',
+                  alignItems: 'center', // Center items vertically when in column mode
+                  gap: isDesktop ? '40px' : '20px', // Adjust gap for desktop and mobile
+                }}
+              >
+                <img
+                  ref={imageRef}
+                  src={ipadCurrent} // First image
+                  alt="QR Order"
+                  style={{
+                    width: isDesktop ? '35%' : '90%', // Adjust width for desktop and mobile
+                    borderRadius: '15px',
+                    objectFit: 'cover',
+                  }}
+                />
+                <img
+                  src={ipadCurrent1} // Second image (same as the first)
+                  alt="QR Order"
+                  style={{
+                    width: isDesktop ? '35%' : '0%', // Adjust width for desktop and mobile
+                    borderRadius: '15px',
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
             <div style={{paddingTop: isDesktop ? '150px' : '70px'}}></div>
         
             <p style={{ textAlign: 'left', fontWeight: 'bold', paddingLeft: isDesktop ? '220px' : '20px', fontSize: isDesktop ? '40px' : '28px' }}>
